@@ -1,0 +1,183 @@
+/* ++++++++++++
+   COLOR STYLE
+
+   ++++++++++++ */
+
+
+span.uens-highlight-texts{
+	color:  #ffc107;
+}
+span.uens-highlight-text{
+	color:  #ffc107;
+}
+
+.uens-button-solid{
+	background-color:  #ffc107;
+}
+
+.uens-button-solid:hover{
+	
+}
+.uens-button-outline-light:hover{
+	background-color:  #ffc107;
+}
+
+.uens-button-outline-dark:hover{
+	background-color:  #ffc107;
+}
+
+.uens-button-outline-round-dark:hover{
+	background-color:  #ffc107;
+}
+
+.uens-btn-round{
+	background-color:  #ffc107;
+}
+
+.uens-btn-round:hover{
+	
+}
+
+.uens-button-outline-round:hover{
+	
+}
+
+.uens-blurb-icon-only i{
+	color:  #ffc107;
+}
+
+.uens-blurb-icon-only h3{
+	color:  #ffc107
+}
+
+.uens-blurb-round-icon:hover .uens-icon{
+	background-color:  #ffc107;
+	
+}
+.uens-blurb-icon-left-square .uens-icon:hover {
+	background-color:  #ffc107;
+}
+.uens-blurb-round-icon:hover h3{
+	color:  #ffc107;
+}
+
+.uens-blurb-icon-left-square:hover .uens-blurb-text h3{
+	color:  #ffc107;
+}
+
+.uens-blurb-icon-left-square:hover .uens-blurb-text h3:after{
+	background-color:  #ffc107;
+}
+
+.uens-main-menu .navbar-nav li a:hover,
+.uens-main-menu .navbar-nav li.active a{
+    color:  #ffc107;
+}
+
+.uens-slider .sp-selected-button {
+  background-color:  #ffc107;
+  
+}
+
+.uens-member-details h3{
+	color:  #ffc107;
+}
+#scrollUp:hover {
+	background-color:  #ffc107;
+	}
+
+/* --------- Featured Work ---------- */
+.uens-port-work-details .uens-port-work-desc p a:hover{
+	color:  #ffc107;
+}
+
+.uens-port-work-details .uens-port-work-desc h3{
+	color:  #ffc107;
+}
+
+.uens-port-work-details .uens-port-work-desc .uens-like-btn a:hover{
+	color:  #ffc107;
+}
+
+.uens-port-work-details .uens-port-work-desc .uens-like-btn a:hover i{
+	color:  #ffc107;
+}
+.uens-work-meta a {
+	color:  #ffc107;
+	font-size: 45px;
+	padding-top: 35px;
+}
+/* --------- Portfolio Style -----------*/
+.uens-portfolio-filter-btn-group ul li a.selected{
+	background-color:  #ffc107;
+}
+
+.uens-portfolio-item .uens-portfolio-details h3{
+	color:  #ffc107;
+}
+
+.uens-portfolio-item .uens-portfolio-details p a:hover{
+	color:  #ffc107;
+}
+
+.uens-portfolio-btn-wrapper a.uens-portfolio-btn:hover{
+	color: #ffffff;
+	background-color:  #ffc107;
+	border: 2px solid transparent;
+}
+.uens-portfolio-details .uens-portfolio-meta-btn ul li:hover {
+	
+	
+}
+.uens-blurb-round-icon:hover {
+	background-color: #323232;
+} 
+.uens-portfolio-filter-btn-group ul li a {
+	border: 2px solid  #ffc107;
+	margin: 2px;
+    color: #ffffff;
+}
+.uens-custom-sec-text ul li i{
+	color:  #ffc107;
+}
+.uens-process-item:hover h3{
+	color:  #ffc107;
+}
+ .uens-pricing-titles {
+ 	background-color:  #ffc107;
+ 	padding: 20px;
+ 	padding-top: 40px;
+ }
+.uens-pricing-plans a.uens-signup-btn {
+	background-color:  #ffc107;
+}
+
+.uens-pricing-plans a.uens-signup-btn:hover{
+	opacity: 0.6;
+}
+.owl-theme .owl-controls .owl-page span {
+  border: 1px solid  #ffc107;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+  background-color:  #ffc107;
+  
+}
+
+.uens-footer-social-info li:hover {
+	background-color:  #ffc107;
+	
+}
+/* ------- Contact Style ------ */
+.uens-contact-section .uens-contact-form input[type="submit"] {
+	background-color:  #ffc107;
+}
+.uens-contact-section .uens-contact-form input[type="submit"]:hover {
+	opacity: 0.6;
+}
+.uens-contact-section .uens-contact-address ul li i {
+	background-color:  #ffc107;
+}
+.uens-contact-details i {
+	color:  #ffc107;
+}
