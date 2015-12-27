@@ -16,36 +16,13 @@
     <!-- =============================
                 stylesheets
     ================================== -->
-
-    <!-- Normalize And Bootstrap -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Google Font  -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:600,700,400,300' rel='stylesheet' type='text/css'>
-
-    <!-- Font Icons -->
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
-
-    <!-- Plugin Default Stylesheets -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/slider-pro.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/owl.transitions.css">
-    <link rel="stylesheet" href="css/animate.css">
-
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/color.css" id="colors" />
-
-    <!--[if lt IE 9]>
-        <script src="js/html5shiv.min.js"></script>
-        <script src="js/respond.min.js"></script>
-        <script type="text/javascript" src="js/selectivizr.js"></script>
-    <![endif]-->
+    {% include stylesheets.html %}
 </head>
+<style>
+  .nav>li>a {
+    padding: 5px 10px;
+  }
+</style>
 
 <body>
     <!-- Preloader -->
@@ -56,59 +33,7 @@
     <!-- =============================
                     Header
     ================================== -->
-    <header>
-        <!-- Navigation Menu start-->
-        <nav class="navbar uens-main-menu">
-            <div class="container">
-
-                <!-- Navbar Toggle -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <!-- Logo -->
-                    <a class="navbar-brand" href="index.html"><img class="logo" id="logo" src="images/logo.png" alt="logo"></a>
-
-                </div>
-                <!-- Navbar Toggle End -->
-
-                <!-- navbar-collapse start-->
-                <div id="nav-menu" class="navbar-collapse collapse" role="navigation">
-                    <ul class="nav navbar-nav uens-menu-wrapper">
-                        <li class="active">
-                            <a href="#uens-slider">Home</a>
-                        </li>
-                        <li>
-                            <a href="#screenshot">About</a>
-                        </li>
-                        <li>
-                            <a href="#about">Services</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#pricing">Price</a>
-                        </li>
-                         <li>
-                            <a href="#testimonials">Testimonial</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- navbar-collapse end-->
-
-            </div>
-        </nav>
-        <!-- Navigation Menu end-->
-    </header>
-    <!-- Header End -->
-
+    {% include header.html %}
 
     <!-- =============================
                 Main Slider
@@ -120,7 +45,7 @@
             <div class="sp-slide uens-main-slides">
                 <div class="uens-img-overlay"></div>
 
-                <img class="sp-image" src="images/img-header/slider-img-1.jpg" alt="Slider 1"/>
+                <img class="sp-image" src="images/img-header/fireworks.png" alt="Fireworks"/>
 
                 <h1 class="sp-layer uens-slider-text-big"
                 data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
@@ -134,23 +59,6 @@
             </div>
             <!-- Slides End -->
 
-            <!-- Slides -->
-            <div class="sp-slide uens-main-slides">
-            <div class="uens-img-overlay"></div>
-                <img class="sp-image" src="images/img-header/slider-img-2.jpg" alt="Slider 2"/>
-
-                <h1 class="sp-layer uens-slider-text-big"
-                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                <span class="uens-highlight-texts">Hello</span> 2016.
-                </h1>
-
-                <p class="sp-layer"
-                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                  But it's probably going to get crazier.
-                </p>
-            </div>
-            <!-- Slides End -->
-
         </div>
     </section>
     <!-- Main Slider End -->
@@ -158,7 +66,7 @@
     <!-- =============================
                 Custom Section
     ================================== -->
-    <section id="screenshot" class="bgc-one uens-custom-sec uens-section-wrapper uens-description">
+    <section id="p-1" class="bgc-one uens-custom-sec uens-section-wrapper uens-description">
         <div class="container">
             <div class="row">
                 <!-- Section Header -->
@@ -212,10 +120,15 @@
     <!-- =============================
                 Custom Section
     ================================== -->
-    <section id="screensho" class="bgc-two uens-custom-sec uens-section-wrapper uens-description">
-        <h2></h2>
+    <section id="screenshot" class="bgc-two uens-custom-sec uens-section-wrapper uens-description">
+
         <div class="container">
             <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12 uens-section-header wow fadeInDown">
+                  <h2><span class="uens-highlight-text">SCREENSHOTS</span></h2>
+                  <div class="uens-section-divider"></div>
+                  <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, rerum provident repudiandae, ducimus beatae voluptatem ullam delectus eum excepturi quaerat, molestias accusamus. Repellendus, laboriosam recusandae! Illo quod voluptates corrupti!</p>
+              </div>
 
                 <div class="col-md-6 col-sm-6 col-xs-12 uens-custom-sec-text wow bounceInRight">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sit, numquam amet voluptatibus obcaecati ea maiores totam nostrum, ad iure rerum quas harum ipsum. Rem ea ducimus quos quae quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, alias illum quia. Sequi et debitis at quibusdam modi alias, voluptatibus porro similique consectetur dolore, neque minus molestiae dolorum ut earum!</p>
@@ -235,7 +148,7 @@
     <!-- =============================
                     About Section
     ================================== -->
-    <section id="about" class="bgc-one-features uens-section-wrapper">
+    <section id="p-2" class="bgc-one-features uens-section-wrapper">
         <div class="container">
             <div class="row">
 
@@ -341,7 +254,7 @@
             <div class="row footer-content">
                 <div class="col-md-4">
                     <h3>About</h3>
-                    <img src="images/logo.png" alt="">
+                    <a href="kevincunanan.com"><img src="images/logo.png" alt=""></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et porro quos iste ratione doloribus asperiores, error omnis delectus rerum sapiente. Et, aliquam modi beatae quae in perferendis ab est fugiat!</p>
                 </div>
                 <div class="col-md-4">
