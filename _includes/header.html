@@ -24,51 +24,11 @@
                     <li class="active">
                         <a href="#uens-slider">Home</a>
                     </li>
-                    <li>
-                        <a href="#p-1">1</a>
-                    </li>
-                    <li>
-                        <a href="#p-2">2</a>
-                    </li>
-                    <li>
-                        <a href="#about">3</a>
-                    </li>
-                    <li>
-                        <a href="#about">4</a>
-                    </li>
-                    <li>
-                        <a href="#about">5</a>
-                    </li>
-                    <li>
-                        <a href="#about">6</a>
-                    </li>
-                    <li>
-                        <a href="#about">7</a>
-                    </li>
-                    <li>
-                        <a href="#about">8</a>
-                    </li>
-                    <li>
-                        <a href="#about">9</a>
-                    </li>
-                    <li>
-                        <a href="#about">10</a>
-                    </li>
-                    <li>
-                        <a href="#about">11</a>
-                    </li>
-                    <li>
-                        <a href="#about">12</a>
-                    </li>
-                    <li>
-                        <a href="#about">13</a>
-                    </li>
-                    <li>
-                        <a href="#about">14</a>
-                    </li>
-                    <li>
-                        <a href="#about">15</a>
-                    </li>
+                    {% for section in site.data.year %}
+                      <li>
+                          <a href="#{{ section.number }}">{{ section.number }}</a>
+                      </li>
+                    {% endfor %}
                 </ul>
             </div>
             <!-- navbar-collapse end-->

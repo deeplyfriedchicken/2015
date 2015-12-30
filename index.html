@@ -71,12 +71,12 @@
     {% for section in site.data.year %}
       {% assign check = counter | modulo:2 %}
       {% if check == 0 %}
-          <section id="p-1" class="bgc-one uens-custom-sec uens-section-wrapper uens-description">
+          <section id="{{ section.number }}" class="bgc-one uens-custom-sec uens-section-wrapper uens-description">
               <div class="container">
                   <div class="row">
                       <!-- Section Header -->
                       <div class="col-md-12 col-sm-12 col-xs-12 uens-section-header wow fadeInDown">
-                          <h2><span class="uens-highlight-text">1</span></h2>
+                          <h2><span class="uens-highlight-text">{{ section.number }}</span></h2>
                           <div class="uens-section-divider"></div>
                           <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque in minus distinctio dolores ipsam.</p>
                       </div>
@@ -87,9 +87,9 @@
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 uens-custom-sec-text wow bounceInRight">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sit, numquam amet voluptatibus obcaecati ea maiores totam nostrum, ad iure rerum quas harum ipsum. Rem ea ducimus quos quae quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, alias illum quia. Sequi et debitis at quibusdam modi alias, voluptatibus porro similique consectetur dolore, neque minus molestiae dolorum ut earum!</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quae suscipit similique ab sunt. Similique ab tempora, aperiam quia, voluptate totam est ullam aliquam, enim corporis quam tempore molestias aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iure perspiciatis explicabo architecto omnis voluptas delectus labore, maxime dignissimos! Repellat deleniti atque nisi ipsam tempora. Quo eum, nulla dicta dolores!</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut. Perferendis iure quisquam illum eligendi voluptas. Autem nostrum officiis nulla dicta eaque tempore sint, voluptas, minima molestias cum et quas.</p>
+                        <p>{{ section.p1 }}</p>
+                        <p>{{ section.p2 }}</p>
+                        <p>{{ section.p3 }}</p>
                       </div>
                   </div>
               </div>
@@ -101,20 +101,20 @@
     <!-- =============================
                 Custom Section
     ================================== -->
-    <section id="screenshot" class="bgc-two uens-custom-sec uens-section-wrapper uens-description">
+    <section id="{{ section.number }}" class="bgc-two uens-custom-sec uens-section-wrapper uens-description">
 
         <div class="container">
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12 uens-section-header wow fadeInDown">
-                  <h2><span class="uens-highlight-text">2</span></h2>
+                  <h2><span class="uens-highlight-text">{{ section.number }}</span></h2>
                   <div class="uens-section-divider"></div>
                   <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, rerum provident repudiandae, ducimus beatae voluptatem ullam delectus eum excepturi quaerat, molestias accusamus. Repellendus, laboriosam recusandae! Illo quod voluptates corrupti!</p>
               </div>
 
                 <div class="col-md-6 col-sm-6 col-xs-12 uens-custom-sec-text wow bounceInRight">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sit, numquam amet voluptatibus obcaecati ea maiores totam nostrum, ad iure rerum quas harum ipsum. Rem ea ducimus quos quae quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, alias illum quia. Sequi et debitis at quibusdam modi alias, voluptatibus porro similique consectetur dolore, neque minus molestiae dolorum ut earum!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quae suscipit similique ab sunt. Similique ab tempora, aperiam quia, voluptate totam est ullam aliquam, enim corporis quam tempore molestias aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iure perspiciatis explicabo architecto omnis voluptas delectus labore, maxime dignissimos! Repellat deleniti atque nisi ipsam tempora. Quo eum, nulla dicta dolores!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ut. Perferendis iure quisquam illum eligendi voluptas. Autem nostrum officiis nulla dicta eaque tempore sint, voluptas, minima molestias cum et quas.</p>
+                    <p>{{ section.p1 }}</p>
+                    <p>{{ section.p2 }}</p>
+                    <p>{{ section.p3 }}</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12 uens-custom-sec-img wow bounceInLeft">
                     <img src="images/{{ section.picture }}" alt="Custom Image">
